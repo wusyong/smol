@@ -129,7 +129,7 @@ impl<T: AsRawFd> Async<T> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::TcpListener;
     ///
@@ -185,7 +185,7 @@ impl<T: AsRawSocket> Async<T> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::TcpListener;
     ///
@@ -451,7 +451,7 @@ impl Async<TcpListener> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::TcpListener;
     ///
@@ -496,7 +496,7 @@ impl Async<TcpListener> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use futures::prelude::*;
     /// use smol::Async;
     /// use std::net::TcpListener;
@@ -524,7 +524,7 @@ impl Async<TcpStream> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::TcpStream;
     ///
@@ -596,7 +596,7 @@ impl Async<UdpSocket> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::UdpSocket;
     ///
@@ -667,7 +667,7 @@ impl Async<UdpSocket> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::UdpSocket;
     ///
@@ -750,7 +750,7 @@ impl Async<UdpSocket> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::net::UdpSocket;
     ///
@@ -773,7 +773,7 @@ impl Async<UnixListener> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixListener;
     ///
@@ -794,7 +794,7 @@ impl Async<UnixListener> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixListener;
     ///
@@ -846,7 +846,7 @@ impl Async<UnixStream> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixStream;
     ///
@@ -888,7 +888,7 @@ impl Async<UnixStream> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixStream;
     ///
@@ -908,7 +908,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -925,7 +925,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -941,7 +941,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -960,7 +960,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -981,7 +981,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -1006,7 +1006,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
@@ -1031,7 +1031,7 @@ impl Async<UnixDatagram> {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    /// ```
     /// use smol::Async;
     /// use std::os::unix::net::UnixDatagram;
     ///
