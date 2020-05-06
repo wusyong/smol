@@ -379,6 +379,28 @@ mod sys {
     use std::os::unix::io::RawFd;
     use std::time::Duration;
 
+    #[cfg(target_os = "android")]
+    mod sys {
+        use nix::libc;
+
+        #[repr(C)]
+        pub struct itimerspec {
+            pub it_interval: libc::timespec,
+            pub it_value: libc::timespec,
+        }
+
+        extern "C" {
+            pub fn timerfd_create(clockid: libc::clockid_t, flags: libc::c_int) -> libc::c_int;
+            pub fn timerfd_settime(timerid: libc::c_int, flags: libc::c_int, new_value: *const itimerspec, old_value: *mut itimerspec) -> libc::c_int;
+        }
+
+        pub const TFD_CLOEXEC: libc::c_int = libc::O_CLOEXEC;
+        pub use libc::CLOCK_REALTIME;
+    }
+    #[cfg(target_os = "android")]
+    use sys::*;
+
+    #[cfg(not(target_os = "android"))]
     use nix::libc::{itimerspec, timerfd_create, timerfd_settime, CLOCK_REALTIME, TFD_CLOEXEC};
     use nix::sys::epoll::{
         epoll_create1, epoll_ctl, epoll_wait, EpollCreateFlags, EpollEvent, EpollFlags, EpollOp,
